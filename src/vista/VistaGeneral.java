@@ -4,7 +4,7 @@ import controlador.Ciudades;
 import controlador.Partido;
 
 public interface VistaGeneral {
-
+    
     public void Iniciar();
     public String getNombre();
     public String getIdentificacion();
@@ -12,5 +12,5 @@ public interface VistaGeneral {
     public boolean IsDerecha();
     public Partido getPartido();
     public String getPropuestas();
-    
+
 }
