@@ -47,7 +47,7 @@ public class VistaConsola implements VistaGeneral{
                     break;
         }
         }while(opcion!=5);
-        
+        sn.close();
     }
 
     static void menuCandidato(String[] args) throws Exception{
@@ -99,6 +99,7 @@ public class VistaConsola implements VistaGeneral{
 
         }
         }while(opcion2!=7);   
+        sn.close();
     }
 
     @Override
@@ -134,6 +135,7 @@ public class VistaConsola implements VistaGeneral{
     @Override
     public String getPropuestas() {
         throw new UnsupportedOperationException("Unimplemented method 'getPropuestas'");
+
     }
 }
 

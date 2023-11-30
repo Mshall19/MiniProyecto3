@@ -7,7 +7,6 @@ import java.util.Scanner;
 import java.util.TreeMap;
 import controlador.Ciudades;
 import controlador.Partido;
-import javafx.scene.web.WebHistory.Entry;
 
 public class FuncionesCandidato {
     public static ArrayList<Candidato> lista= new ArrayList<Candidato>();
@@ -30,8 +29,9 @@ public class FuncionesCandidato {
             System.in.read();
             scanner.nextLine();
             }
-        catch(Exception e)
-        {}
+        catch(Exception e){
+        }
+        scanner.close();
     }
     public static void crearCandidato(String[] args) throws Exception{
         
@@ -54,6 +54,7 @@ public class FuncionesCandidato {
                     System.out.print(i.toString() + ". " + ciudades[i-1] + "\t\t\n" );
                 }else {
                     System.out.print(i.toString() + ". " + ciudades[i-1] + "\t\t" );
+            scanner.close();
             }
             }
             System.out.println("\n-------------------------------------------------------------------------------\n"); 
@@ -187,6 +188,7 @@ public class FuncionesCandidato {
             System.out.println("\n");
             System.out.println("\n"); 
         });
+        scanner.close();
     } 
 
     public static void buscarCandidato(){
@@ -216,6 +218,7 @@ public class FuncionesCandidato {
                 System.out.print("\n");
             }
         });
+        scanner.close();
     }
 
     public static void actualizarCandidato(){
@@ -393,7 +396,7 @@ public class FuncionesCandidato {
                     }
             validar = 0;
         }
-                         
+        scanner.close();                 
     }
 
     public static void eliminarCandidato(){
@@ -418,7 +421,7 @@ public class FuncionesCandidato {
                 FuncionesCandidato.lista.remove(i);
             }
         }
-
+        scanner.close();
     }
     public static void asignarVotos(){
         Scanner scanner = new Scanner(System.in);
@@ -433,6 +436,7 @@ public class FuncionesCandidato {
             }
              System.out.print("\033c");   
         });
+        scanner.close();
     }
 
     public static void ContarPorPartido(){
