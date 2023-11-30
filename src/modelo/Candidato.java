@@ -43,4 +43,5 @@ public class Candidato extends Ciudadano{
     public void setNumero_votos(int numero_votos) {
         this.numero_votos = numero_votos;
     }
+
 }
