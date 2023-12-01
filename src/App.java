@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 import vista.VistaConsola;
+import vista.VistaGUI;
 
 public class App {   
     public static void main(String[] args) throws Exception {
@@ -18,7 +19,8 @@ public class App {
                 opcion.equalsIgnoreCase("s")) {
                 VistaConsola.main(args);
             } else {
-                System.out.println("adios");
+                VistaGUI vistaGUI = new VistaGUI();
+                vistaGUI.setVisible(true);
             }
             sn.close();
         }
