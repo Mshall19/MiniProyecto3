@@ -23,6 +23,10 @@ public class Candidato extends Ciudadano{
         this.propuestas = propuestas;
         numero_votos = -1;
     }
+    public Candidato(String nombre2, String cedula2, String ciudad2, String posicion2, String partido2, int votos2,
+            String propuestas2) {
+    }
+    
     public boolean isDerecha() {
         return derecha;
     }
