@@ -23,8 +23,6 @@ public class Candidato extends Ciudadano{
         this.propuestas = propuestas;
         numero_votos = -1;
     }
-    
-
     public boolean isDerecha() {
         return derecha;
     }
@@ -87,7 +85,7 @@ public class Candidato extends Ciudadano{
     public void setVotos(int votos) {
         this.votos = votos;
     }
-    
+
     @Override
     public String toString() {
         return "Nombre: " + nombre +
